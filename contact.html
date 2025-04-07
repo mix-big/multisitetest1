@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .nav { margin-bottom: 30px; }
+    .nav button {
+      border: none;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn-home { background-color: #007bff; }
+    .btn-home:hover { background-color: #0056b3; }
+    .btn-about { background-color: #28a745; }
+    .btn-about:hover { background-color: #1e7e34; }
+    .btn-contact { background-color: #ff9800; }
+    .btn-contact:hover { background-color: #e68900; }
+  </style>
+  <script>
+    function goTo(page) {
+      location.href = page;
+    }
+  </script>
+</head>
+<body>
+  <div class="nav">
+    <button class="btn-home" onclick="goTo('main.html')">ホーム</button>
+    <button class="btn-about" onclick="goTo('about.html')">自己紹介</button>
+    <button class="btn-contact" onclick="goTo('contact.html')">お問い合わせ</button>
+  </div>
+  <h1>お問い合わせ</h1>
+  <p>ご意見・ご質問など、お気軽にどうぞ！</p>
+</body>
+</html>
