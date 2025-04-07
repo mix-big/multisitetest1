@@ -4,41 +4,26 @@
   <meta charset="UTF-8">
   <title>ホーム</title>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    .nav {
-      margin-bottom: 30px;
-    }
+    body { font-family: sans-serif; padding: 20px; }
+    .nav { margin-bottom: 30px; }
     .nav button {
       border: none;
       padding: 12px 24px;
       margin-right: 10px;
-      border-radius: 20px; /* ← ここで丸み */
+      border-radius: 20px;
       color: white;
       font-size: 16px;
       cursor: pointer;
       transition: background-color 0.3s;
     }
-    .btn-home {
-      background-color: #007bff;
-    }
-    .btn-home:hover {
-      background-color: #0056b3;
-    }
-    .btn-about {
-      background-color: #28a745;
-    }
-    .btn-about:hover {
-      background-color: #1e7e34;
-    }
-    .btn-contact {
-      background-color: #ff9800;
-    }
-    .btn-contact:hover {
-      background-color: #e68900;
-    }
+    .btn-home { background-color: #007bff; }
+    .btn-home:hover { background-color: #0056b3; }
+    .btn-about { background-color: #28a745; }
+    .btn-about:hover { background-color: #1e7e34; }
+    .btn-contact { background-color: #ff9800; }
+    .btn-contact:hover { background-color: #e68900; }
+    .btn-sub { background-color: #9c27b0; }
+    .btn-sub:hover { background-color: #7b1fa2; }
   </style>
   <script>
     function goTo(page) {
@@ -47,15 +32,13 @@
   </script>
 </head>
 <body>
-
   <div class="nav">
-    <button class="btn-home" onclick="goTo('index.html')">ホーム</button>
+    <button class="btn-home" onclick="goTo('main.html')">ホーム</button>
     <button class="btn-about" onclick="goTo('about.html')">自己紹介</button>
     <button class="btn-contact" onclick="goTo('contact.html')">お問い合わせ</button>
+    <button class="btn-sub" onclick="goTo('subsite/index.html')">サブサイト</button>
   </div>
-
   <h1>ようこそ！</h1>
-  <p>ここはホームページです。</p>
-
+  <p>ここはホームページ（main.html）です。</p>
 </body>
 </html>
