@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サブサイト</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .nav { margin-bottom: 30px; }
+    .nav button {
+      border: none;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn-main { background-color: #3f51b5; }
+    .btn-main:hover { background-color: #303f9f; }
+    .btn-info { background-color: #009688; }
+    .btn-info:hover { background-color: #00796b; }
+    .btn-top { background-color: #607d8b; }
+    .btn-top:hover { background-color: #455a64; }
+  </style>
+  <script>
+    function goTo(page) {
+      location.href = page;
+    }
+  </script>
+</head>
+<body>
+  <div class="nav">
+    <button class="btn-main" onclick="goTo('index.html')">サブホーム</button>
+    <button class="btn-info" onclick="goTo('info.html')">情報</button>
+    <button class="btn-top" onclick="goTo('../main.html')">トップへ戻る</button>
+  </div>
+  <h1>サブサイトへようこそ！</h1>
+  <p>ここはサブサイトのトップページです。</p>
+</body>
+</html>
